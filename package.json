@@ -1,35 +1,44 @@
 {
   "name": "@quadbyte/deepequal-x",
   "version": "1.0.0",
-  "description": "Deep equality comparison utility",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "Zero-dep deep equality comparison for JavaScript. Objects, arrays, Maps, Sets, Dates, RegExps, typed arrays, circular refs.",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": "./src/cli.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
   "files": [
-    "dist/**/*",
+    "src/",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "prepublishOnly": "npm run build"
+    "test": "node --test test/index.test.js"
   },
   "keywords": [
     "deep-equal",
+    "equals",
+    "compare",
+    "deeply",
     "equality",
-    "comparison",
-    "deep-comparison"
+    "zero-dependency"
   ],
   "author": "Sulthon Zh",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
-    "@types/jest": "^29.5.0",
-    "jest": "^29.5.0",
-    "ts-jest": "^29.1.0",
-    "typescript": "^6.0.0"
+  "engines": {
+    "node": ">=18"
   },
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sulthonzh/deepequal-x"
+  },
+  "homepage": "https://github.com/sulthonzh/deepequal-x#readme",
+  "bugs": {
+    "url": "https://github.com/sulthonzh/deepequal-x/issues"
+  }
 }

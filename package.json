@@ -40,5 +40,8 @@
   "homepage": "https://github.com/sulthonzh/deepequal-x#readme",
   "bugs": {
     "url": "https://github.com/sulthonzh/deepequal-x/issues"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
   }
 }

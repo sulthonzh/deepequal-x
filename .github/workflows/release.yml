@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, svr1]
     timeout-minutes: 15
     permissions:
       id-token: write

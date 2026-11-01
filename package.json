@@ -43,6 +43,5 @@
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.0"
-  },
-  "_ci_test": "2026-11-01T21:05:58.403Z"
+  }
 }
